@@ -21,6 +21,9 @@ const conform = (string) => {
 app.get('/:method/:zip?',(req, res) => {
   let method = req.params.method
   let zip;
+  if (!method || (method !== 'has' && method !== 'display')) {
+    res.status(400).send()
+  }
   if (req.params.zip) {
     zip = conform(req.params.zip)
   }
