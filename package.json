@@ -9,7 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "exppress": "*",
     "express": "^4.17.1"
   }
 }
