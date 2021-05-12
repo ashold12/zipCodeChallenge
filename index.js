@@ -91,5 +91,5 @@ app.delete('/:zip', (req, res) => {
 
 
 app.listen(port, () => {
-  console.log(`Hello Hiring Manager :) server is listening on ${port}`)
+  console.log(`Hello Hiring Manager, server is listening on ${port}`)
 })
