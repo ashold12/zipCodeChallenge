@@ -16,16 +16,20 @@ Make all the requests in postman or curl (or other tool of your choice) to the f
 
 NOTE: anytime you see (zip) replace this with a 5 digit integer
 
-GET REQUESTS:
+<b>GET REQUESTS</b>
+
 /display  --> this will return a string of all the zip codes with the ranges for consecutive zip codes
+
 /has/(zip)  --> this will return a boolean if a valid zip is entered as a parameter, else it will return 400 status
 
-POST REQUEST:
+<b>POST REQUEST</b>
+
 /(zip) --> this will return a message `Zip code (zip) inserted` if a valid zip was entered
 
 IT WILL RETURN INSERTED REGARDLESS IF THE ZIP IS PRESENT OR NOT. I found it redundant to code out an additional message considering it was busy work and not a proof of ability
 
-DELETE REQUEST:
+<b>DELETE REQUEST</b>
+
 /(zip) --> this will return a message `Zip code (zip) was deleted` if a valid zip was entered 
 
 likewise as above this will not return an alternate message under the condition that the zip is not present in memory already. The reasoning is the same for the aditional post request functionality
